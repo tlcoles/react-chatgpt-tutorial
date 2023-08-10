@@ -1,5 +1,4 @@
 # Logs
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +6,48 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+/node_modules
+/client/node_modules
+/server/node_modules
+.pnp.js
+/.pnp
+
+# Build and Distribution
 dist
 dist-ssr
-*.local
+/build
+build/
 
-# Editor directories and files
+# Testing
+/coverage
+template/src/__tests__/__snapshots__/
+
+# Editor and IDE specifics
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Environment and Config
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Miscellaneous
+.gitignore
+.npm/
+*.tgz
+my-app*
+/.changelog
+
+# Information
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
